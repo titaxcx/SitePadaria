@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback - Padoca</title>
+  <link rel="stylesheet" href="../css/feedback.css"> <!-- (opcional) -->
+  <li><a href="index.html">Início</a></li>
+</head>
+<body>
+    <form id="formCadastro">
+    <h1>Feedback 🍞</h1>
+      <div class="container">
+
+    <label>Nome:</label><br>
+    <input type="text" id="nome" required><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" id="email" required><br><br>
+
+    <label>Telefone:</label><br>
+    <input type="tel" id="telefone" required><br><br>
+
+    <label>Produto/Serviço:</label><br>
+    <select id="select" required>
+      <option value="" disabled selected>Selecione</option>
+      <option value="Pães">Pães</option>
+      <option value="Doces">Doces</option>
+      <option value="Salgados">Salgados</option>
+      <option value="Atendimento">Atendimento</option>
+    </select><br><br>
+
+    <label>Avaliação:</label><br>
+    <input type="radio" name="avaliacao" value="Excelente"> Excelente
+    <input type="radio" name="avaliacao" value="Bom"> Bom
+    <input type="radio" name="avaliacao" value="Ruim"> Ruim<br><br>
+
+    <textarea placeholder="Comentários..." rows="4" cols="40"></textarea><br><br>
+
+    <div class="termos">
+      <input type="checkbox"> Recomendaria a padaria?<br>
+      <input type="checkbox"> Autorizo a publicação do meu feedback<br>
+    </div><br>
+
+    <button type="submit">Enviar pelo WhatsApp</button>
+  </form>
+
+  <script src="../js/feedback.js"></script>
+</body>
+</html>
+        

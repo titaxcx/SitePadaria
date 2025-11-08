@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="../css/pagamento.css">
+    <li><a href="#">Início</a></li>
+</head>
+<body>
+  
+</body>
+</html>
+<body>
+  <h2>💳 Escolha a forma de pagamento</h2>
+
+  <div class="container-pagamento">
+    <p id="resumoPedido"></p>
+
+    <label for="pagamento">Forma de pagamento:</label>
+    <select id="pagamento">
+      <option value="Pix">Pix</option>
+      <option value="Cartão">Cartão</option>
+      <option value="Dinheiro">Dinheiro</option>
+    </select>
+
+    <label for="km">Distância até a padaria (km):</label>
+    <input type="number" id="km" min="0" placeholder="Ex: 5">
+
+    <p id="taxaEntrega">Taxa de entrega: R$ 0,00</p>
+
+    <button id="enviar">Enviar Pedido no WhatsApp</button>
+  </div>
+
+  <script src="../js/pagamento.js"></script>
+</body>

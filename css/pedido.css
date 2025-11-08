@@ -1,0 +1,146 @@
+/* ======= ESTILO PADARIA DA VILLA ======= */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fffaf6;
+  color: #000000;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ======= CONTAINER GERAL ======= */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* ======= TÍTULO CENTRALIZADO ======= */
+h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+/* ======= FORMULÁRIO ======= */
+form {
+  background: #f3d79a; /* tom claro do #dcac5b */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  padding: 40px 35px;
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
+  border: 2px solid #dcac5b;
+}
+
+/* ======= LABELS E INPUTS ======= */
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #000000;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dcac5b;
+  border-radius: 8px;
+  margin-top: 6px;
+  font-size: 15px;
+  outline: none;
+  background-color: #fffaf6;
+  color: #000;
+}
+
+input:focus {
+  border-color: #5c3920;
+  box-shadow: 0 0 5px #5c3920;
+}
+
+/* ======= PRODUTOS ======= */
+.produto-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9e7c3;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: transform 0.2s;
+}
+
+.produto-item:hover {
+  transform: scale(1.02);
+}
+
+.produto-item label {
+  flex: 1;
+}
+
+.produto-item input[type="number"] {
+  width: 60px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+/* ======= BOTÕES ======= */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #5c3920;
+  color: #000000;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #3f2716;
+  color: #fffaf6;
+}
+
+/* ======= TOTAL ======= */
+#resultado {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  color: #000000;
+}
+
+/* ======= RESPONSIVIDADE ======= */
+@media (max-width: 600px) {
+  body {
+    padding: 30px 10px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  form {
+    padding: 25px;
+  }
+
+  .produto-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .produto-item input[type="number"] {
+    margin-top: 8px;
+  }
+}
+/* ======= FIM DO ESTILO ======= */

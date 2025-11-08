@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="stylesheet" href="../css/pedido.css">
+    <meta charset="UTF-8">
+    <title>Padoca da Villa</title>
+    <li><a href="index.html">Início</a></li>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="texto-esquerda">
+            <h1>🛒 Faça seu Pedido</h1>
+        </div>
+
+        <div class="formulario-direita">
+            <form id="formPedido">
+                <label>Nome do Cliente:</label>
+                <input type="text" id="nome" required>
+
+                <label>Telefone:</label>
+                <input type="tel" id="telefone" required>
+
+                <h3>Escolha seus produtos:</h3>
+
+                <div class="produto-item">
+                    <label><input type="checkbox" class="produto" data-preco="8" value="Mimos do Café"> Mimos do Café
+                        (R$ 8,00)</label>
+                    <input type="number" class="quantidade" value="1" min="1">
+                </div>
+
+                <div class="produto-item">
+                    <label><input type="checkbox" class="produto" data-preco="11" value="Pão Francês"> Pão Francês (R$
+                        11,00/kg)</label>
+                    <input type="number" class="quantidade" value="1" min="1">
+                </div>
+
+                <div class="produto-item">
+                    <label><input type="checkbox" class="produto" data-preco="5" value="Bolinho de Chuva"> Bolinho de
+                        Chuva (R$ 5,00)</label>
+                    <input type="number" class="quantidade" value="1" min="1">
+                </div>
+
+                <div class="produto-item">
+                    <label><input type="checkbox" class="produto" data-preco="7" value="Pastel de Forno"> Pastel de
+                        Forno (R$ 7,00)</label>
+                    <input type="number" class="quantidade" value="1" min="1">
+                </div>
+
+                <div class="produto-item">
+                    <label><input type="checkbox" class="produto" data-preco="8" value="Café Expresso"> Café Expresso
+                        (R$ 8,00)</label>
+                    <input type="number" class="quantidade" value="1" min="1">
+                </div>
+
+                <p id="resultado">Total: R$ 0,00</p>
+
+                <button type="button" id="calcular">Calcular Total</button>
+                <button type="submit">Finalizar Pedido</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/pedido.js"></script>
+
+</body>
+
+</html>

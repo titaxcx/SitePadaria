@@ -1,0 +1,132 @@
+/* ======= ESTILO PADOCA DA VILLA ======= */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fffaf6;
+  color: #000000;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ======= CONTAINER GERAL ======= */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* ======= TÍTULO ======= */
+h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  color: #000000;
+  margin: 25px 0 15px;
+}
+
+/* ======= FORMULÁRIO ======= */
+form {
+  background: #f3d79a;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  padding: 40px 35px;
+  width: 100%;
+  max-width: 600px;
+  border: 2px solid #dcac5b;
+  text-align: left;
+}
+
+/* ======= LABELS E INPUTS ======= */
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #000;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dcac5b;
+  border-radius: 8px;
+  margin-top: 6px;
+  font-size: 15px;
+  outline: none;
+  background-color: #fffaf6;
+  color: #000;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #5c3920;
+  box-shadow: 0 0 5px #5c3920;
+}
+
+/* ======= AVALIAÇÃO (RÁDIOS) ======= */
+.avaliacao {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.avaliacao label {
+  font-weight: normal;
+}
+
+/* ======= TERMOS (CHECKBOX) ======= */
+.termos {
+  margin-top: 15px;
+}
+
+.termos label {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+/* ======= BOTÃO ======= */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #5c3920;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #3f2716;
+  color: #fffaf6;
+}
+
+/* ======= RESPONSIVIDADE ======= */
+@media (max-width: 600px) {
+  body {
+    padding: 30px 10px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  form {
+    padding: 25px;
+  }
+
+  .avaliacao {
+    flex-direction: column;
+    gap: 5px;
+  }
+}

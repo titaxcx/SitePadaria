@@ -1,0 +1,113 @@
+/* ======= ESTILO PADOCA DA VILLA ======= */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffaf6;
+    color: #000000;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  /* ======= TÍTULO ======= */
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  
+  /* ======= CONTAINER CENTRAL ======= */
+  .container-pagamento {
+    background: #f3d79a; /* tom claro do #dcac5b */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    padding: 50px 35px;
+    width: 100%;
+    max-width: 450px;
+    border: 2px solid #dcac5b;
+    text-align: left;
+  }
+  
+  /* ======= LABELS E INPUTS ======= */
+  label {
+    display: block;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #000000;
+  }
+  
+  select,
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dcac5b;
+    border-radius: 8px;
+    margin-top: 7px;
+    font-size: 15px;
+    outline: none;
+    background-color: #fffaf6;
+    color: #000000;
+  }
+  
+  select:focus,
+  input:focus {
+    border-color: #5c3920;
+    box-shadow: 0 0 5px #5c3920;
+  }
+  
+  /* ======= RESUMO E TAXA ======= */
+  #resumoPedido {
+    background: #f9e7c3;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  #taxaEntrega {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    color: #000000;
+  }
+  
+  /* ======= BOTÃO ======= */
+  button {
+    width: 100%;
+    padding: 12px;
+    background: #5c3920;
+    color: #000000;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background: #3f2716;
+    color: #fffaf6;
+  }
+  
+  /* ======= RESPONSIVIDADE ======= */
+  @media (max-width: 60px) {
+    body {
+      padding: 20px;
+    }
+  
+    h2 {
+      font-size: 1.6rem;
+    }
+  
+    .container-pagamento {
+      padding: 25px;
+    }
+  }
+  
